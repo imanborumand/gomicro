@@ -78,6 +78,7 @@ func main() {
 	srv.Init()
 
 	// Register handler
+
 	pb.RegisterShippingServiceHandler(srv.Server(), &service{repo})
 
 	// Run the server
